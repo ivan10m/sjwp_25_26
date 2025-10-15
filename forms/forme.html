@@ -4,9 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forme</title>
+    <style>
+        div {
+            position: absolute;
+        }
+        .drugi {
+            margin-left: 180px;
+        }
+        .treci {
+            margin-top: 170px;
+        }
+    </style>
 </head>
 <body>
     <h2>Forme u HTML-u</h2>
+    <form action="#" method="get">
+        <div>
+            <label for="ime">Ime:</label> <br>
+            <label for="prezime">Prezime:</label><br>
+            <label for="pass">Unesi lozinku:</label><br>
+            <label for="mail">Mail adresa:</label><br>
+            <label for="date">Unesi datum:</label><br>
+            <label for="color">Izaberi boju:</label><br>
+            <label for="file">Izaberi datoteku:</label><br>
+            <label for="tel">Inesi broj telefona:</label><br>
+        </div>
+        <div class="drugi">
+            <input type="text" id="ime" placeholder="Unesi ime..." required> <br>
+            <input type="text" id="prezime" size="8" maxlength="4" value="Mat" disabled> <br>
+            <input type="password" id="pass"> <br>
+            <input type="email" name="mail" id="mail"> <br>
+            <input type="date" name="date" id="date"> <br>
+            <input type="color" name="color" id="color"> <br>
+            <input type="file" name="file" id="file"> <br>
+            <input type="tel" name="tel" id="tel"> <br>
+        </div>
+        <div class="treci">
+            <p>Izaberi najbolji klub:</p>
+        <input type="radio" name="klub" id="hajduk">
+        <label for="hajduk">Hajduk</label> <br>
+         <input type="radio" name="klub" id="dinamo">
+        <label for="dinamo">Dinamo</label> <br>
+         <input type="radio" name="klub" id="slaven">
+        <label for="slaven">Slaven Belupo</label> <br>
+        <p>Izaberi najbolji klub:</p>
+        <input type="checkbox" name="hajduk" id="hajduk">
+        <label for="hajduk">Hajduk</label> <br>
+        <input type="checkbox" name="dinamo" id="dinamo">
+        <label for="dinamo">Dinamo</label> <br>
+        <input type="checkbox" name="slaven" id="slaven">
+        <label for="slaven">Slaven</label> <br>
+
+        <input type="reset" value="Poništi">
+        <input type="submit" value="Pošalji">
+        </div>
+        
+
+    </form>
+    
+    
+    
+    
+    
+    
     <!-- <form action="#" method="get">
         <label for="ime">Unesi ime:</label>
         <input type="text" id="ime" required placeholder="Unesi ime..."> <br>
