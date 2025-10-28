@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Internal CSS -->
+    <style>
+      .drugi {
+         color:red;
+      }
+    </style>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
    <h1>Zadaće:</h1>
@@ -14,6 +21,13 @@
       <li>Zadaća</li>
       <li>Zadaća</li>
    </ol>
+
+   <h2>Dodavanje CSS:</h2>
+   <ul>
+      <li style="color:blue;">Inline</li>
+      <li class="drugi">Internal</li>
+      <li class="treci">External</li>
+   </ul>
 
     <!-- Oblikavanje teksta -->
      <p>Mi smo <strong>3.E razred</strong>. Idemo u <em>Tehničku školu</em>. <mark>Razrednik</mark> 
@@ -26,7 +40,7 @@
 
     <!-- Liste, ul-unordered liste, ol-ordered liste, dl-definition liste -->
      <h2>Voćni desert u čaši</h2>
-     <h3>Sastojci:</h3>
+     <h3 id="naslov">Sastojci:</h3>
      <ul type="circle">
         <li>230 g kreme za kremšnite</li>
         <li>500 ml hladnog mlijeka</li>
@@ -55,7 +69,7 @@
      <img src="https://www.biovie.fr/img/cms/histoire-origine-mangue.png" alt="slika manga" width="500" >
      <br>
      <hr>
-     <p>Slika s našeg PCa</p>
+     <p draggable="true">Slika s našeg PCa</p>
      <img src="./slike/mango.png" alt="slika manga" width="500">
 
      <br>
