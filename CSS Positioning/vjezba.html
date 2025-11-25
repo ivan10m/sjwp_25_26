@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS position</title>
+    <style>
+        .relative {
+            width: 500px;
+            height: 300px;
+            border: 1px solid black;
+            position: relative;
+        }
+        .prvi {
+            width: 200px;
+            height: 300px;
+            background-color: rgba(75, 9, 50, 0.7);
+            box-shadow: 4px 3px 10px 7px rgba(0,0,0,0.75);
+            position: absolute;
+            z-index: 10;
+        }
+        .drugi {
+            width: 200px;
+            height: 300px;
+            background-color: crimson;
+            box-shadow: 4px 3px 10px 7px rgba(0,0,0,0.75);
+            position: absolute;
+            left: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Positioning</h1>
+    <div class="relative">
+        <div class="prvi"></div>
+        <div class="drugi"></div>
+    </div>
+    <h1>Zastava Laosa</h1>
+    <div class="red">
+        <div class="blue"></div>
+        <div class="krug"></div>
+    </div>
+</body>
+</html>
