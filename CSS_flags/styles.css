@@ -1,0 +1,15 @@
+.plava {
+    width: 500px;
+    height: 350px;
+    background-color: transparent;
+    position: relative;
+}
+
+.crv_h {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 50px solid black;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+}
