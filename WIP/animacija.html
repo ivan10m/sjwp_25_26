@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacija</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background: #0071ff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            font-size: 1.35rem;
+            color: white;
+            box-sizing: border-box;
+            margin-left: 200px;
+            margin-top: 200px;
+            padding: 80px;
+            
+            animation-duration: 3s;
+            animation-name: spin;
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-iteration-count: 1;  /* ili infinite */
+            animation-direction: reverse; /*ili alternate ili normal*/
+            /* animation-fill-mode: forwards; */ /*stane kod kraja*/
+            animation-play-state: running;
+            /* animation: 3s spin ease 0s 1 reverse; */
+        }
+
+        div:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes spin {
+            0% {
+
+            }
+            50% {
+                scale: 2;
+                transform: rotate(0);
+                border-radius: 0;
+            }
+            100% {
+                transform: rotate(360deg);
+                border-radius: 50%;
+                scale: 2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Animacije</h1>
+    <div>3.E
+    </div>
+</body>
+</html>
