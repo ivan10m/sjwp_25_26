@@ -10,9 +10,9 @@ body {
 
 .flex-container {
     display: flex;
-    height: 100vh;
     flex-wrap: wrap;
     justify-content: space-between;
+    height: 100vh;
 }
 
 .flex-container > *, section {
@@ -20,17 +20,17 @@ body {
 }
 
 header, footer {
+    height: 10vh;
     background-color: #999;
     flex: 0 100%;
-    height: 10vh;
 }
 
 main {
-    display: flex;
     height: 80vh;
+    display: flex;
     justify-content: space-between;
-    flex: 0 100%;
     flex-wrap: wrap;
+    flex: 0 100%;
 }
 
 section {
@@ -38,17 +38,17 @@ section {
     flex: 0 24%;
 }
 
-/*Media query dio*/
-/*Veliki ekrani*/
+/* veliki ekrani */
 @media (max-width: 1023px) {
     section {
         background-color: pink;
         flex: 0 49%;
         height: 48%;
     }
-}
+    
+} 
 
-/*Tableti*/
+/* tableti */
 @media (max-width: 767px) {
     section:first-child, section:last-child {
         background-color: yellow;
@@ -57,7 +57,7 @@ section {
     }
 }
 
-/* Mobiteli */
+/* mobiteli */
 @media (max-width: 479px) {
     section {
         background-color: aquamarine;
@@ -71,9 +71,6 @@ section {
 
 @media (orientation: landscape) and (max-width: 479px) {
     section {
-        background-color: tomato;
-    }
-    section:first-child, section:last-child {
         background-color: tomato;
     }
 }
